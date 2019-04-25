@@ -53,6 +53,8 @@ int main()
 		UINT nLen(0);
 		VerQueryValue(pszAppVersion, "\\", (LPVOID*)& pFileInfo, &nLen);
 	}
+
+
 	if (pFileInfo->dwFileVersionLS != 13785) {
 		cout << "暂时只支持13785版本";
 	}
